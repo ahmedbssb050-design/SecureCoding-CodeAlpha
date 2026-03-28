@@ -1,0 +1,3 @@
+import os
+# Load from system environment instead of hardcoding
+SECRET_ADMIN_KEY = os.getenv("ADMIN_KEY")
