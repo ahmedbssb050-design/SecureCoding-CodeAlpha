@@ -1,0 +1,6 @@
+# INSECURE (Old):
+# query = "SELECT * FROM users WHERE username = '%s'" % username
+
+# SECURE (Fixed):
+query = "SELECT * FROM users WHERE username = ?"
+cursor.execute(query, (username,))
